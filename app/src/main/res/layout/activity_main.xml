@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/centerHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:id="@+id/centerVertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"/>
+
+    <com.hbb20.CountryCodePicker
+        app:ccp_textSize="40dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/countryCPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/centerVertical"
+        android:layout_marginBottom="70dp"
+        app:ccp_defaultNameCode="Ind"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/etMobileNumber"
+        android:hint="@string/enter_mobile_number"
+        android:layout_below="@+id/countryCPicker"
+        android:layout_marginTop="-30dp"
+        android:layout_marginHorizontal="40dp"
+        android:inputType="phone"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:id="@+id/etMessage"
+        android:hint="@string/enter_message"
+        android:layout_below="@+id/etMobileNumber"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="40dp"
+        android:inputType="textMultiLine"
+        android:gravity="start"/>
+    
+    <Button
+        android:id="@+id/btnSendMessage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/send_message"
+        android:layout_marginHorizontal="5dp"
+        android:shadowRadius="5"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/black"/>
+
+</RelativeLayout>

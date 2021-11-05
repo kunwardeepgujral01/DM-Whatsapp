@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DM Whatsapp</string>
+    <string name="dm_whatsapp">DM Whatsapp</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="enter_message">Enter Message</string>
+    <string name="send_message">Send Message</string>
+</resources>
